@@ -14,7 +14,7 @@ export default function Landing() {
                     We're trying to build out a verified list of crowd-sourced list of Vaccination Centers across the country so that people can get reliable information in a quick & easy manner.
                 </p>
                 <div className={styles.button_wrapper}>
-                    <Button type={"outline"}>Join the Team</Button>
+                    <Button type={"solid"}>Join the Team</Button>
                     <Button type={"outline"}>Learn More</Button>
                 </div>
                 

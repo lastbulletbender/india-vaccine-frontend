@@ -52,3 +52,14 @@
 .button_avatar {
     margin: 10px;
 }
+
+.button_solid {
+    background-color: #060683;
+    color: white;
+}
+
+.button_outline {
+    background-color: transparent;
+
+    border: 1px solid black;
+}

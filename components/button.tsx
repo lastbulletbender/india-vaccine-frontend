@@ -9,12 +9,31 @@ interface ButtonInterface {
 }
 
 export default function Button({ children, type }: ButtonInterface) {
+    /**
+     * Filter out null strings
+     * 
+     * @reference https://stackoverflow.com/a/41346932/12241836
+     */
+    const classNames = [styles.button, type === "outline" ? styles.button_outline : styles.button_solid].filter(x => !!x).reduce((a, b) => a + ' ' + b)
     return (
-        <div className={styles.button} style={{backgroundColor: "#060683", color: "white"}}>
-            <div className={styles.button_avatar}>
-            <Image  src={"/assets/small_human.svg"} height={25.22} width={20.66}/>
-            </div>
+        <div className={classNames}>
+            {
+            type === "solid" ?
+                <div className={styles.button_avatar}>
+                    <Image src={"/assets/small_human.svg"} height={25.22} width={20.66} />
+                </div> 
+            : null
+            }
+            
             { children}
+
+            {
+            type === "outline" ?
+                <div className={styles.button_avatar}>
+                    <Image src={"/assets/arrow-right-circle.svg"} height={24} width={24} />
+                </div>
+            : null
+            }
         </div>
     )
 }
