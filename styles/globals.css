@@ -6,6 +6,21 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+/*
+This is the color system of the entire application
+*/
+:root {
+  --red-strong: #fd3c3b;
+  --red-light: #fd3c3b40;
+
+  --white-pure: #fff;
+  --white-strong: #fefefe;
+  --white-mild: #1b1b1b50;
+  --white-light: #1d1d1d;
+
+  --black-strong: #050101;
+}
+
 a {
   color: inherit;
   text-decoration: none;
