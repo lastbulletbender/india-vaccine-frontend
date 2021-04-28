@@ -19,6 +19,13 @@ function MyApp({ Component, pageProps }) {
         type="font/otf"
         crossOrigin=""
       />
+
+      <link
+        rel="preload"
+        href="fonts/Gilroy/Gilroy-Bold.ttf"
+        as="font"
+        crossOrigin=""
+      />
     </Head>
   <Component {...pageProps} />
   </>

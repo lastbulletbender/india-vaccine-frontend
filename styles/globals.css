@@ -20,6 +20,14 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#common_weight_name_
   src: url("/fonts/Gilroy/Gilroy-Regular.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+}
+
 /*
 This is the color system of the entire application
 */
