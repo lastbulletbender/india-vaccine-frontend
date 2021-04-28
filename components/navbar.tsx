@@ -14,8 +14,8 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className={styles.routes}>
-                    <Link href="/speakers">Speakers</Link>
-                    <Link href="/sponsors">Sponsors</Link>
+                    <Link href="/speakers">About</Link>
+                    <Link href="/volunteer">Volunteer</Link>
                 </div>
             </div>
         </nav>
