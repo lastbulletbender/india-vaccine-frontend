@@ -1,0 +1,21 @@
+.landing_wrapper {
+  /* display: flex;
+    align-items: flex-start;
+    justify-content: center; */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+
+  /* width: 100%; */
+
+  padding: 1rem 0;
+  margin-bottom: 4rem;
+
+  width: 80vw;
+}
+
+.avatar {
+}
