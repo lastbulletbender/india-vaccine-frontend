@@ -11,7 +11,9 @@ interface ButtonInterface {
 export default function Button({ children, type }: ButtonInterface) {
     return (
         <div className={styles.button} style={{backgroundColor: "#060683", color: "white"}}>
-            <Image src={"/assets/small_human.svg"} height={25.22} width={20.66}></Image>
+            <div className={styles.button_avatar}>
+            <Image  src={"/assets/small_human.svg"} height={25.22} width={20.66}/>
+            </div>
             { children}
         </div>
     )
