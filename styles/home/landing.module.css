@@ -17,5 +17,11 @@
   width: 80vw;
 }
 
+.button_wrapper {
+  display: flex;
+
+  gap: 20px;
+}
+
 .avatar {
 }

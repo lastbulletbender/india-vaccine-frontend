@@ -1,6 +1,7 @@
 import Image from "next/image"
 
 import styles from "../../styles/home/landing.module.css"
+import Button from "../button"
 
 export default function Landing() {
     return (
@@ -12,6 +13,11 @@ export default function Landing() {
                 <p>
                     We're trying to build out a verified list of crowd-sourced list of Vaccination Centers across the country so that people can get reliable information in a quick & easy manner.
                 </p>
+                <div className={styles.button_wrapper}>
+                    <Button type={"outline"}>Join the Team</Button>
+                    <Button type={"outline"}>Learn More</Button>
+                </div>
+                
             </div>
             <div className={styles.avatar}>
                 <Image src={"/assets/avatar_landing.svg"}
